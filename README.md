@@ -8,4 +8,6 @@ Tuesday Tasks.
   4. Finished reading the article on Pseudocode.
   5. Answer: Pseudocode is helpful to plan how to solve a problem by using logic and a language any person can understand. It can help to breakdown a problem into pieces, solve it little by little and then come up with a final solution. This is only to have a clear mental map of how to code the solution later on.
   6. - If the user base was born in the year 2022, then set the age to 0. - Else add 1 year of value for each decreased year value of 2022
-  7. 
+  7. Finished reading the article.
+  8. Answer: The flowcharts can be used as mental maps to implement the step by step solutions that help visualize what will each step will do, and what that next step will do next, and so on.
+  9. Finished watching the video.

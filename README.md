@@ -20,7 +20,7 @@ Tuesday Tasks.
   6. - If the user base was born in the year 2022, then set the age to 0. - Else add 1 year of value for each decreased year value of 2022.
 
 
-  7. Finished reading the article.
+  7. A flowchart is a diagram that describes a process or system. It can help to visually demonstrate the workflow of a system, by showing a sequence of steps, what order and in what hierarchy do these steps exist in order to obtain a specific result.
 
 
   8. Answer: The flowcharts can be used as mental maps to implement the step by step solutions that help visualize what will each step will do, and what that next step will do next, and so on.

@@ -112,4 +112,36 @@ Binary:
 
 Answer: 1100101011111110
 
-4.
+4. Code Program for adding two numbers:
+
+.data
+	result_message: .asciiz "\nEl resultado es: "
+.text
+	main:
+		li $t0, 10
+		li $t1, 90
+
+		add $t2, $t0, $t1
+
+		li $v0, 4
+		la $a0 result_message
+		syscall
+
+		li $v0, 1
+		move $a0, $t2
+		syscall
+    
+    The result is: 100.
+    
+    Code program for displaying my name:
+    
+     .data
+    message: .asciiz "\nAbdias Tenas\n"
+  .text
+    main:
+      li $v0, 4
+      la $a0, message
+      syscall
+      
+      
+      The result is: Abdias Tenas.

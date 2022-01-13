@@ -45,3 +45,41 @@ Assembler: This type of language is a group of mnemonics that represent basic in
 
 Binary: Which is the lowest level of code that the computer and its components can actually understand and read with ease.
 
+WEDNESDAY TASKS
+1. Answer to what is a binary, decimal and hexadecimal number.
+- A binary number is a method of mathematical expression in the base-2 numeral system which uses only two symbols, usually these symbols are zero “0” and one “1”.
+
+- A decimal is the standard system for denoting integer and non-integer numbers. These can be identified with a decimal separator such as period or comma symbol, this helps separate digits of a number into two groups that gives them their value, depending whether they are before or after the decimal separator. This numbers use only 10 symbols.
+
+- A hexadecimal number is based on 16 symbols that includes numbers from 0 to 9 and the letters from A to the F. This numbers are provided for a human-friendly.
+
+2. My date of birht 1990.
+ 
+To convert it to binary, you have to divide in half 1990 all the way down to 1. Whenever there is a decimal separator for example: 1.5, the ".5" is taken as a number 1 and ignore for the next division. Then once you have reached to the number one after all necessary divisions, you use the number 1 for every odd number and the number 0 for every even number.
+
+1990/2=995
+995/2=497+1
+497/2=248+1
+248/2=124
+124/2=62
+62/2=31
+31/2=15+1
+15/2=7+1
+7/2=3+1
+3/2=1+1
+
+11111000110 = 1990.
+
+To convert it to hexadecimal, Divide the decimal number by 16. Treat the division as an integer division.  
+Write down the remainder (in hexadecimal).
+Divide the result again by 16.  Treat the division as an integer division.  
+Repeat step 2 and 3 until result is 0.
+The hex value is the digit sequence of the remainders from the last to first.
+
+1990/16= 124.375	.375*16=6
+124/16= 7.75		.75*16=12=C
+7/16=0.4375		.4375*16=7
+
+1990 = 7C6
+
+3. 

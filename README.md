@@ -291,3 +291,18 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(twiceAsOld);
 }
 */
+
+3. Your task is to write a function called valid_spacing() or validSpacing() which checks if a string has valid spacing. The function should return either True or False.
+
+For this kata, the definition of valid spacing is one space between words, and no leading or trailing spaces. Below are some examples of what the function should return.
+
+Solution:
+/*
+function validSpacing(s) {
+//Using a ternary operator, we asked the function to return if the string has valid spacing with booleans.
+// So if s is equal to an empty string, then it is true.
+//If the split method returns an array of the spaces inside the string,
+//then the find method, returns the first character inside the string.
+  return s=='' ? true : s.split(' ').find(el=> el=='') >= 0 ? false : true
+}
+*/

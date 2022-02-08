@@ -233,7 +233,7 @@ This function should return a number (final grade). There are four types of fina
 0, in other cases.
 
 Solution:
-
+/*
 function finalGrade (exam, projects) {
   // Using an if conditional, on this first iteration, it will check for
   //the value of exam if its bigget than 90 or if the value of projects is bigger than 10, it will return a final grade of 100.
@@ -255,3 +255,14 @@ function finalGrade (exam, projects) {
     return 0;
   }
 }
+*/.
+
+TUESDAY TASKS
+
+1. 
+
+Solution:
+/*
+function dutyFree(normPrice, discount, hol){
+  return Math.floor(hol/((normPrice*discount)/100));
+  */

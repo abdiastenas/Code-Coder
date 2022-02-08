@@ -311,6 +311,38 @@ function validSpacing(s) {
 Note: input will never be an empty string
 
 Solution: Could not solve it by myself.
+/*
 function fakeBin(x){
   return x.split('').map((num) => num > 4 ? 1 : 0).join('');
 }
+*/
+
+5. Remove all exclamation marks from the end of sentence.
+
+Examples
+remove("Hi!") === "Hi"
+remove("Hi!!!") === "Hi"
+remove("!Hi") === "!Hi"
+remove("!Hi!") === "!Hi"
+remove("Hi! Hi!") === "Hi! Hi"
+remove("Hi") === "Hi"
+
+Solution:
+
+//This one took a while... no pun intended, but I first tried to use the for loop, and got stucked,
+//then found out about the slice string method, but got stuck with the index position, so I had to go find
+//the solution on google and found out that I was missing the -1 index position which starts counting backwards at the end of the string.
+/*
+function remove (string) {
+  // The while loop iteration searches if the value inside string
+  //and the .slice() method returned the same value inside the array meaning both had the string'!'
+  // count from -1 or backwards in the index positions of the string, then!
+  while (string && string.slice (-1) == '!'){
+    //This variable is run using the .slice() method to count from the position zero
+    //and last positiong of the string counting backwards.
+    string = string.slice(0,-1);
+  }
+  //This returned the value of string after the code above.
+  return string;
+}
+*/

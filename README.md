@@ -1,6 +1,8 @@
 # Code-Coder
 Code Coder Tasks.
 
+WEEK 1
+
 Tuesday Tasks.
   1. Based on the video, there is two process for languages: Compiled and Interpreted. A compiled program is when the source code is fully read with a compiler, and convert it to a compiled executable program for the computer to execute it. An interpreted program, the source code is read one line at a time with an interpreter, executing each line right after reading it.
 
@@ -145,3 +147,76 @@ Answer: 1100101011111110
       
       
       The result is: Abdias Tenas.
+      
+      
+WEEK 2
+
+MONDAY TASKS
+
+1. This code does not execute properly. Try to figure out why.
+	/*function multiply(a, b){
+  a * b
+}*/
+
+Solution:
+/*
+function multiply(a, b){
+  //This variable writes a variable called 'multi'
+  //that uses a multiply operator to give a final result for a and b.
+  let multi = a * b;
+  //This returns the final result of the multiply operation inside the 'multi' variable.
+  return multi;
+}
+*/
+
+2. You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.
+
+examples:
+
+uniTotal("a") == 97 uniTotal("aaa") == 291
+
+
+Solution:
+/*
+function uniTotal (string) {
+   //This variable count has the value of 0. Will be used for returning an int.
+   let count = 0;
+  //This FOR loop starts reiterating at each index position of the string.
+  for (let i = 0; i < string.length; i++) {
+    //Count is added to the result of the string method found at its index.
+    count += string.charCodeAt(i);
+  }
+  //This returns the final value of count after the sum.
+  return count;
+}
+*/
+
+
+3. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+
+Solution:
+/*
+function getChar(c){
+  //The string method takes each int and returns its equivalent of a character.
+  return String.fromCharCode(c);
+}
+
+4. Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+The binary number returned should be a string.
+
+Solution:
+
+/*
+function addBinary(a,b) {
+  //The first variables returns as value the sum of two variables. The second variable has an empty string.
+  let sum = a + b; binary = '';
+  //function loop while takes the condition that if the final result of sum is bigger than 0,
+  while ( sum > 0 ) {
+  //then the binary string will take the remainder of sum variable, then perform and add operation with the binary value '',
+  // and then it will round up or down an integer after dividing the sum into 2.
+    binary = ( sum % 2 ) + binary; sum = Math.floor ( sum / 2 )
+  };
+  //This will return the final value of binary as a string.
+  return binary;
+}
+*/

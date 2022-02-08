@@ -156,7 +156,7 @@ I am Abdias, a motion designer. I have created videos for brands in animation an
       
 WEEK 2
 
-MONDAY TASKS
+TUESDAY TASKS
 
 1. This code does not execute properly. Try to figure out why.
 	/*function multiply(a, b){
@@ -262,7 +262,7 @@ function finalGrade (exam, projects) {
 }
 */.
 
-TUESDAY TASKS
+WEDNESDAY TASKS
 
 1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
@@ -317,7 +317,9 @@ function fakeBin(x){
 }
 */
 
-5. Remove all exclamation marks from the end of sentence.
+THURSDAY TASKS
+
+1. Remove all exclamation marks from the end of sentence.
 
 Examples
 remove("Hi!") === "Hi"
@@ -346,3 +348,37 @@ function remove (string) {
   return string;
 }
 */
+
+2. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+Solution:
+/*
+function shortcut (string) {
+  //The replace string method replaces every character inside the array with an empty string.
+  //The regex was new for me so that had to be copied and pasted in a blink of an 'i'.
+  return string.replace(/[aeiou]/ig,'');
+}
+*/
+
+3. Let's play! You have to return which player won! In case of a draw return Draw!.
+//I was not able to solve this on my own due to time constrict issues.
+Solution:
+const rps = (p1, p2) => {
+  const pattern = ['rock', 'paper', 'scissors'];
+  const p1Index = pattern.findIndex((v) => v === p1);
+  const p2Index = pattern.findIndex((v) => v === p2);
+  
+  if ((p1Index + 1) % 3 === p2Index) {
+    return 'Player 2 won!';
+  }
+  if ((p1Index + 2) % 3 === p2Index) {
+    return 'Player 1 won!';
+  }
+  
+  return 'Draw!';
+};
+
+4. Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+
+Solution:
+//Pending.
+

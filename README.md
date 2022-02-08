@@ -264,10 +264,30 @@ function finalGrade (exam, projects) {
 
 TUESDAY TASKS
 
-1. 
+1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
 Solution:
 /*
 function dutyFree(normPrice, discount, hol){
+  //This is a dividend and multiply operation to find the amount of bottles needed to buy.
+  // the Math.floor just rounds up or down the final number of the division and multiply operations.
   return Math.floor(hol/((normPrice*discount)/100));
   */
+
+
+2. Your function takes two arguments:
+
+current father's age (years)
+current age of his son (years)
+Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+Solution:
+/*
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  //This variable makes the operation of the number of dadYearsOld minus the multiply between the number
+  //of sonYearsOld times two. Meaning double the number of the fathers age.
+  let twiceAsOld = dadYearsOld - (sonYearsOld * 2);
+  //This rounds up the integer in case there is any floating points.
+  return Math.abs(twiceAsOld);
+}
+*/

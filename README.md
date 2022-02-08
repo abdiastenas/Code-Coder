@@ -146,13 +146,7 @@ Answer: 1100101011111110
       syscall
       
       
-      The result is: Abdias Tenas.
-      
-      
-FIRST CODE CORE CHALLENGE
-Mission Statement
-
-I am Abdias, a motion designer. I have created videos for brands in animation and film. I have started my journey this 2022 in the coding development field with the goal to learn, grow and become a software developer by the end of the year. I’m curious, perseverant and always open to learn, hoping to be able to contribute to the data technologies that drives our modern world, with the objective to create better solutions for the world’s economy and the housing issue.
+      The result is: Abdias Tenas.     
       
 WEEK 2
 
@@ -382,3 +376,15 @@ const rps = (p1, p2) => {
 Solution:
 //Pending.
 
+FIRST CODE CORE CHALLENGE
+Mission Statement
+
+I am Abdias, a motion designer. I have created videos for brands in animation and film. I have started my journey this 2022 in the coding development field with the goal to learn, grow and become a software developer by the end of the year. I’m curious, perseverant and always open to learn, hoping to be able to contribute to the data technologies that drives our modern world, with the objective to create better solutions for the world’s economy and the housing issue.
+
+
+
+WEEK 3
+
+MONDAY Tasks
+
+1.

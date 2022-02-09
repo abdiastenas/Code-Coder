@@ -1,4 +1,4 @@
-# WEEK 1
+# **WEEK 1**
 
 Tuesday Tasks.
   1. Based on the video, there is two process for languages: Compiled and Interpreted. A compiled program is when the source code is fully read with a compiler, and convert it to a compiled executable program for the computer to execute it. An interpreted program, the source code is read one line at a time with an interpreter, executing each line right after reading it.

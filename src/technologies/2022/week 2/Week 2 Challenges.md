@@ -2,7 +2,7 @@
 
 ## TUESDAY TASKS
 
-#### **1.**  This code does not execute properly. Try to figure out why.
+#### 1.  This code does not execute properly. Try to figure out why.
 	/*function multiply(a, b){
   a * b
 }*/
@@ -16,7 +16,7 @@
   			return multi;
 			}
 
-2. You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.
+#### 2. You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.
 
 examples:
 uniTotal("a") == 97 uniTotal("aaa") == 291
@@ -34,7 +34,7 @@ uniTotal("a") == 97 uniTotal("aaa") == 291
 	  return count;
 	}
 
-3. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+#### 3. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
 
 ### Solution:
 	function getChar(c){
@@ -42,7 +42,7 @@ uniTotal("a") == 97 uniTotal("aaa") == 291
 	  return String.fromCharCode(c);
 	}
 
-4. Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+#### 4. Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
 The binary number returned should be a string.
 
 ### Solution:
@@ -59,11 +59,9 @@ The binary number returned should be a string.
 	  return binary;
 	}
 
-5. Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
-
-This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
-
-This function should return a number (final grade). There are four types of final grades:
+#### 5. Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
+#### This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
+#### This function should return a number (final grade). There are four types of final grades:
 
 100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
 90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
@@ -95,7 +93,7 @@ This function should return a number (final grade). There are four types of fina
 
 ## WEDNESDAY TASKS
 
-1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
+#### 1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
 ### Solution:
 	function dutyFree(normPrice, discount, hol){
@@ -104,11 +102,10 @@ This function should return a number (final grade). There are four types of fina
 	  return Math.floor(hol/((normPrice*discount)/100));
 
 
-2. Your function takes two arguments:
-
+#### 2. Your function takes two arguments:
 current father's age (years)
 current age of his son (years)
-Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+#### Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
 
 ### Solution:
 	function twiceAsOld(dadYearsOld, sonYearsOld) {
@@ -119,7 +116,7 @@ current age of his son (years)
 	  return Math.abs(twiceAsOld);
 	}
 
-3. Your task is to write a function called valid_spacing() or validSpacing() which checks if a string has valid spacing. The function should return either True or False.
+#### 3. Your task is to write a function called valid_spacing() or validSpacing() which checks if a string has valid spacing. The function should return either True or False.
 For this kata, the definition of valid spacing is one space between words, and no leading or trailing spaces. Below are some examples of what the function should return.
 
 ### Solution:
@@ -131,7 +128,7 @@ For this kata, the definition of valid spacing is one space between words, and n
 	  return s=='' ? true : s.split(' ').find(el=> el=='') >= 0 ? false : true
 	}
 
-4. Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+#### 4. Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 Note: input will never be an empty string
 
 ### Solution: Could not solve it by myself.
@@ -141,7 +138,7 @@ Note: input will never be an empty string
 
 ## THURSDAY TASKS
 
-1. Remove all exclamation marks from the end of sentence.
+#### 1. Remove all exclamation marks from the end of sentence.
 
 Examples
 remove("Hi!") === "Hi"
@@ -169,7 +166,7 @@ remove("Hi") === "Hi"
 	}
 	*/
 
-2. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+#### 2. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
 
 ### Solution:
 	function shortcut (string) {
@@ -178,7 +175,7 @@ remove("Hi") === "Hi"
 	  return string.replace(/[aeiou]/ig,'');
 	}
 
-3. Let's play! You have to return which player won! In case of a draw return Draw!.
+#### 3. Let's play! You have to return which player won! In case of a draw return Draw!.
 
 ### Solution:
 	//I was not able to solve this on my own due to time constrict issues.
@@ -197,7 +194,7 @@ remove("Hi") === "Hi"
 	  return 'Draw!';
 	};
 
-4. Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+#### 4. Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
 
 ### Solution:
 //Pending.

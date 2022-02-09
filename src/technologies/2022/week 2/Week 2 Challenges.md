@@ -1,6 +1,6 @@
 # Week 2 Challenges
 
-##TUESDAY TASKS
+## TUESDAY TASKS
 
 1. This code does not execute properly. Try to figure out why.
 	/*function multiply(a, b){
@@ -106,7 +106,7 @@ function finalGrade (exam, projects) {
 }
 */.
 
-##WEDNESDAY TASKS
+## WEDNESDAY TASKS
 
 1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
@@ -161,7 +161,7 @@ function fakeBin(x){
 }
 */
 
-##THURSDAY TASKS
+## THURSDAY TASKS
 
 1. Remove all exclamation marks from the end of sentence.
 
@@ -226,7 +226,7 @@ const rps = (p1, p2) => {
 Solution:
 //Pending.
 
-#FIRST CODE CORE CHALLENGE
-##Mission Statement
+# FIRST CODE CORE CHALLENGE
+## Mission Statement
 
 I am Abdias, a motion designer. I have created videos for brands in animation and film. I have started my journey this 2022 in the coding development field with the goal to learn, grow and become a software developer by the end of the year. I’m curious, perseverant and always open to learn, hoping to be able to contribute to the data technologies that drives our modern world, with the objective to create better solutions for the world’s economy and the housing issue.

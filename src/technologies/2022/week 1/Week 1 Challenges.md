@@ -1,6 +1,6 @@
 # **WEEK 1**
 
-Tuesday Tasks.
+## Tuesday Tasks.
   1. Based on the video, there is two process for languages: Compiled and Interpreted. A compiled program is when the source code is fully read with a compiler, and convert it to a compiled executable program for the computer to execute it. An interpreted program, the source code is read one line at a time with an interpreter, executing each line right after reading it.
 
 
@@ -44,7 +44,7 @@ Assembler: This type of language is a group of mnemonics that represent basic in
 
 Binary: Which is the lowest level of code that the computer and its components can actually understand and read with ease.
 
-WEDNESDAY TASKS
+## Wednesday Tasks
 1. Answer to what is a binary, decimal and hexadecimal number.
 - A binary number is a method of mathematical expression in the base-2 numeral system which uses only two symbols, usually these symbols are zero “0” and one “1”.
 

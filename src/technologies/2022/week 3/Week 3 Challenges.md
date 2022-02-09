@@ -221,3 +221,47 @@ Fold 2-times:
         return accumulator + currentValue;
       }, 0);
     }
+
+### 2. Encrypt this!
+Encrypt this!
+
+You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:
+
+Your message is a string containing space separated words.
+You need to encrypt each word in the message using the following rules:
+The first letter must be converted to its ASCII code.
+The second letter must be switched with the last letter
+Keepin' it simple: There are no special characters in the input.
+Examples:
+encryptThis("Hello") === "72olle"
+encryptThis("good") === "103doo"
+encryptThis("hello world") === "104olle 119drlo"
+
+### Solution:
+Pending
+
+### 3. Format a string of names like 'Bart, Lisa & Maggie'.
+Given: an array containing hashes of names
+
+Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+
+Example:
+
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// returns 'Bart, Lisa & Maggie'
+
+list([ {name: 'Bart'}, {name: 'Lisa'} ])
+// returns 'Bart & Lisa'
+
+list([ {name: 'Bart'} ])
+// returns 'Bart'
+
+list([])
+// returns ''
+
+### Solution:
+    function list(names){
+      const coma = ',';
+      const sign = '&';
+      return names.reduce((pre, curr, index)) => `${pre}${(index == names.lentgh-1 ? sign : comma)}${curr.name}`, '').slide(2).trim();
+    }

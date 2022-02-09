@@ -7,7 +7,7 @@
   a * b
 }*/
 
-Solution:
+### Solution:
 /*
 function multiply(a, b){
   //This variable writes a variable called 'multi'
@@ -25,7 +25,7 @@ examples:
 uniTotal("a") == 97 uniTotal("aaa") == 291
 
 
-Solution:
+### Solution:
 /*
 function uniTotal (string) {
    //This variable count has the value of 0. Will be used for returning an int.
@@ -43,7 +43,7 @@ function uniTotal (string) {
 
 3. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
 
-Solution:
+### Solution:
 /*
 function getChar(c){
   //The string method takes each int and returns its equivalent of a character.
@@ -53,7 +53,7 @@ function getChar(c){
 4. Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
 The binary number returned should be a string.
 
-Solution:
+### Solution:
 
 /*
 function addBinary(a,b) {
@@ -81,7 +81,7 @@ This function should return a number (final grade). There are four types of fina
 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
 0, in other cases.
 
-Solution:
+### Solution:
 /*
 function finalGrade (exam, projects) {
   // Using an if conditional, on this first iteration, it will check for
@@ -110,7 +110,7 @@ function finalGrade (exam, projects) {
 
 1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
-Solution:
+### Solution:
 /*
 function dutyFree(normPrice, discount, hol){
   //This is a dividend and multiply operation to find the amount of bottles needed to buy.
@@ -125,7 +125,7 @@ current father's age (years)
 current age of his son (years)
 Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
 
-Solution:
+### Solution:
 /*
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   //This variable makes the operation of the number of dadYearsOld minus the multiply between the number
@@ -140,7 +140,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 For this kata, the definition of valid spacing is one space between words, and no leading or trailing spaces. Below are some examples of what the function should return.
 
-Solution:
+### Solution:
 /*
 function validSpacing(s) {
 //Using a ternary operator, we asked the function to return if the string has valid spacing with booleans.
@@ -154,7 +154,7 @@ function validSpacing(s) {
 4. Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 Note: input will never be an empty string
 
-Solution: Could not solve it by myself.
+### Solution: Could not solve it by myself.
 /*
 function fakeBin(x){
   return x.split('').map((num) => num > 4 ? 1 : 0).join('');
@@ -173,7 +173,7 @@ remove("!Hi!") === "!Hi"
 remove("Hi! Hi!") === "Hi! Hi"
 remove("Hi") === "Hi"
 
-Solution:
+### Solution:
 
 //This one took a while... no pun intended, but I first tried to use the for loop, and got stucked,
 //then found out about the slice string method, but got stuck with the index position, so I had to go find
@@ -194,7 +194,7 @@ function remove (string) {
 */
 
 2. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
-Solution:
+### Solution:
 /*
 function shortcut (string) {
   //The replace string method replaces every character inside the array with an empty string.
@@ -205,7 +205,7 @@ function shortcut (string) {
 
 3. Let's play! You have to return which player won! In case of a draw return Draw!.
 //I was not able to solve this on my own due to time constrict issues.
-Solution:
+### Solution:
 const rps = (p1, p2) => {
   const pattern = ['rock', 'paper', 'scissors'];
   const p1Index = pattern.findIndex((v) => v === p1);
@@ -223,7 +223,7 @@ const rps = (p1, p2) => {
 
 4. Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
 
-Solution:
+### Solution:
 //Pending.
 
 # FIRST CODE CORE CHALLENGE

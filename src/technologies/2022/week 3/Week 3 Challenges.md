@@ -144,3 +144,18 @@ Example
         newArray.forEach(function (Arr) { count[Arr] = (count[Arr] || 0) + 1; });
       return count;
     }
+
+### 3. Simple Pig Latin
+Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+### Solution:
+    function pigIt(str){  
+      let arr = str.split(' ')
+      return arr
+        .map((word) => {
+          return word.match(/[A-z]/i)
+            ? `${word.substr(1)}${word.substr(0, 1)}ay`
+            : word
+        })
+        .join(' ')
+    }

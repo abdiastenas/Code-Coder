@@ -1,4 +1,4 @@
-# Core-Code
+# Core-Code Course
 ![](https://media.giphy.com/media/PvUrFewkbG3ni06z6e/giphy.gif)
 ### This is my repository for the Core Code challenges during the course.
 It is a very challenging journey since my background is more on the design and film industry

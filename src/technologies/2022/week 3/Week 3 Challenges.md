@@ -175,3 +175,14 @@ Write a function that takes a string of parentheses, and determines if the order
       }
       return count == 0;
     }
+
+
+### 2. Convert string to camel case
+Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+
+### Solution:
+    function toCamelCase(str){
+      let spacing = str.split('-').join('').split('_').join('');
+      for (let i = 0; i < str.length; i++) {
+      } return spacing;
+    }

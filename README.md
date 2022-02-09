@@ -1,8 +1,8 @@
-# Code-Coder
-
+# Core-Code
 ![](https://media.giphy.com/media/PvUrFewkbG3ni06z6e/giphy.gif)
-
-Code Coder Tasks.
+### This is my repository for the Core Code challenges during the course.
+It is a very challenging journey since my background is more on the design and film industry
+but I am excited to be a part of the Core Code challenge!
 
 * [Week 1 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%201/Week%201%20Challenges.md)
 * [Week 2 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%202/Week%202%20Challenges.md)

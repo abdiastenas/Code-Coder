@@ -13,36 +13,34 @@ Implement the function which takes an array containing the names of people that 
 ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
 ### Solution:
-/*
-function likes(names) {
-  /* This first conditional is using .LENGTH to count the exact number of characters,
-  and the == is checking if the number of the count is equal to cero, meaning
-  there is no value or string inside the names variable.*/
-  if (names.length == 0) {
-    //This will return a string 'no one likes this' if the conditional is met.
-    return "no one likes this";
-    /* This is doing the same as the first conditional, except this time is counting if there is at least
-    one character inside the string. */
-  } else if (names.length == 1) {
-    // This will display the character inside the string plus the new string 'likes this'.
-    return names[0] + " likes this";
-    /* This is repeating the pattern of counting, checking if it meets the two characters count. */
-  } else if (names.length == 2) {
-    // This will return the 2 characters inside names variable plus the string 'like this'.
-    return names[0] + " and " + names[1] + " like this";
+    function likes(names) {
+    /* This first conditional is using .LENGTH to count the exact number of characters,
+    and the == is checking if the number of the count is equal to cero, meaning
+    there is no value or string inside the names variable.*/
+      if (names.length == 0) {
+      //This will return a string 'no one likes this' if the conditional is met.
+        return "no one likes this";
+      /* This is doing the same as the first conditional, except this time is counting if there is at least
+      one character inside the string. */
+     } else if (names.length == 1) {
+      // This will display the character inside the string plus the new string 'likes this'.
+       return names[0] + " likes this";
+      /* This is repeating the pattern of counting, checking if it meets the two characters count. */
+     } else if (names.length == 2) {
+       // This will return the 2 characters inside names variable plus the string 'like this'.
+        return names[0] + " and " + names[1] + " like this";
     // Repeating count pattern, checking for 3 characters.
-  } else if (names.length == 3) {
-    // This will display the first 2 characters plus a string 'and' plus a string 'like this'.
-    return names[0] + ", " + names[1] + " and " + names[2] + " like this";
+    } else if (names.length == 3) {
+      // This will display the first 2 characters plus a string 'and' plus a string 'like this'.
+       return names[0] + ", " + names[1] + " and " + names[2] + " like this";
     // This is what will return if none of the previous conditions are met before.
-  } else {
-    /* This will display the first 2 characters plus a string 'and'
-    plus the total number of characters inside the variable minus the first two plus
-    a string 'others like this'. */
-    return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
-  }
-}
-*/
+    } else {
+     /* This will display the first 2 characters plus a string 'and'
+      plus the total number of characters inside the variable minus the first two plus
+     a string 'others like this'. */
+     return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
+     }
+    }
 
 2. Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
 
@@ -65,32 +63,32 @@ decodeMorse('.... . -.--   .--- ..- -.. .')
 //should return "HEY JUDE"
 
 ### Solution: Got Stuck!
-/*
-decodeMorse = function(morseCode){
-  let message = '';
-  let words = morseCode.trim().Split('   ');
- for (let i = 0; i < words.length; i++){
-   let temp = words[i].split('');
-   for (let i = 0; i = temp.length; i++){
+
+    decodeMorse = function(morseCode){
+      let message = '';
+      let words = morseCode.trim().Split('   ');
+    for (let i = 0; i < words.length; i++){
+      let temp = words[i].split('');
+    for (let i = 0; i = temp.length; i++){
      if (MORSE_CODE[temp[i]]){
        message.push(MORSE_CODE[temp[i]]);
+      }
      }
-   }
-   if (i !== words.length -1){
+     if (i !== words.length -1){
      message.push(' ');
-   }
- }
-  return message.join('');
-}
+     }
+    }
+    return message.join('');
+    }
 
 
 
 
-/*morseCode = morseCode.trim();
-  let refinedData = morseCode.split('   ');
-  let result = [];
+    morseCode = morseCode.trim();
+    let refinedData = morseCode.split('   ');
+    let result = [];
   
-  for (let i = 0; i < refinedData.length; i++) {
+    for (let i = 0; i < refinedData.length; i++) {
     let temp = refinedData[i].split(' ');
     for (let j = 0; j < temp.length; j++) {
       if (MORSE_CODE[temp[j]]) {
@@ -101,7 +99,6 @@ decodeMorse = function(morseCode){
     if (i !== refinedData.length - 1) {
     result.push(' ');
     }
-  }
-  return result.join('');
-}
-*/
+      }
+     return result.join('');
+    }

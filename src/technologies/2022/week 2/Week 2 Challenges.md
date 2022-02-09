@@ -1,4 +1,4 @@
-# Week 2 Challenges
+# Week 2 Challenges 💻😱
 
 ## TUESDAY TASKS
 

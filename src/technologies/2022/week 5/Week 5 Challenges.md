@@ -25,3 +25,12 @@
 	// //         repeat.push(letters[i]);
 	//      }
 	//      return result.join("");
+
+#### 2. [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/typescript)
+
+#### Solution:
+	export const findOdd = (xs: number[]): number => {
+	  //Using the reduce() method to return the number
+	  //is repeated an odd number of times.
+	  return xs.reduce( (a,b) => a ^ b);
+	};

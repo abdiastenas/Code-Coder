@@ -52,10 +52,6 @@
 	}
 
 #### 5. [Student's Final Grade](https://www.codewars.com/kata/5ad0d8356165e63c140014d4)
-100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
-90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
-75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
-0, in other cases.
 
 ### Solution:
 	function finalGrade (exam, projects) {
@@ -92,6 +88,7 @@
 
 
 #### 2. [Twice as old](https://www.codewars.com/kata/5b853229cfde412a470000d0)
+
 ### Solution:
 	function twiceAsOld(dadYearsOld, sonYearsOld) {
 	  //This variable makes the operation of the number of dadYearsOld minus the multiply between the number
@@ -113,6 +110,7 @@
 	}
 
 #### 4. [Fake Binary](https://www.codewars.com/kata/57eae65a4321032ce000002d)
+
 ### Solution: Could not solve it by myself.
 	function fakeBin(x){
 	  return x.split('').map((num) => num > 4 ? 1 : 0).join('');
@@ -120,15 +118,7 @@
 
 ## THURSDAY TASKS
 
-#### 1. Remove all exclamation marks from the end of sentence.
-
-Examples
-remove("Hi!") === "Hi"
-remove("Hi!!!") === "Hi"
-remove("!Hi") === "!Hi"
-remove("!Hi!") === "!Hi"
-remove("Hi! Hi!") === "Hi! Hi"
-remove("Hi") === "Hi"
+#### 1. [Exclamation marks series #2: Remove all exclamation marks from the end of sentence](https://www.codewars.com/kata/57faece99610ced690000165)
 
 ### Solution:
 	//This one took a while... no pun intended, but I first tried to use the for loop, and got stucked,
@@ -148,7 +138,7 @@ remove("Hi") === "Hi"
 	}
 	*/
 
-#### 2. Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+#### 2. [Vowel remover](https://www.codewars.com/kata/5547929140907378f9000039)
 
 ### Solution:
 	function shortcut (string) {
@@ -157,7 +147,7 @@ remove("Hi") === "Hi"
 	  return string.replace(/[aeiou]/ig,'');
 	}
 
-#### 3. Let's play! You have to return which player won! In case of a draw return Draw!.
+#### 3. [Rock Paper Scissors!](https://www.codewars.com/kata/5672a98bdbdd995fad00000f)
 
 ### Solution:
 	//I was not able to solve this on my own due to time constrict issues.
@@ -176,12 +166,12 @@ remove("Hi") === "Hi"
 	  return 'Draw!';
 	};
 
-#### 4. Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+#### 4. [Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec)
 
 ### Solution:
 //Pending.
 
-# FIRST CODE CORE CHALLENGE
+# FIRST CODE CORE CHALLENGE 🚲
 ## Mission Statement
 
 	I am Abdias, a motion designer. I have created videos for brands in animation and film.

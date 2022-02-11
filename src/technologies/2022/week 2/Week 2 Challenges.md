@@ -2,10 +2,7 @@
 
 ## TUESDAY TASKS
 
-#### 1.  This code does not execute properly. Try to figure out why.
-function multiply(a, b){
-  a * b
-}
+#### 1.  [Multiply](https://www.codewars.com/kata/50654ddff44f800200000004)
 
 ### Solution:
 	function multiply(a, b){
@@ -16,10 +13,7 @@ function multiply(a, b){
   			return multi;
 			}
 
-#### 2. You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.
-
-examples:
-uniTotal("a") == 97 uniTotal("aaa") == 291
+#### 2. [ASCII Total](https://www.codewars.com/kata/572b6b2772a38bc1e700007a)
 
 ### Solution:
 	function uniTotal (string) {
@@ -34,7 +28,7 @@ uniTotal("a") == 97 uniTotal("aaa") == 291
 	  return count;
 	}
 
-#### 3. Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+#### 3. [get character from ASCII Value](https://www.codewars.com/kata/55ad04714f0b468e8200001c)
 
 ### Solution:
 	function getChar(c){
@@ -42,9 +36,7 @@ uniTotal("a") == 97 uniTotal("aaa") == 291
 	  return String.fromCharCode(c);
 	}
 
-#### 4. Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
-The binary number returned should be a string.
-
+#### 4. [Binary Addition](https://www.codewars.com/kata/551f37452ff852b7bd000139)
 ### Solution:
 	function addBinary(a,b) {
 	  //The first variables returns as value the sum of two variables. The second variable has an empty string.
@@ -59,10 +51,7 @@ The binary number returned should be a string.
 	  return binary;
 	}
 
-#### 5. Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
-#### This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
-#### This function should return a number (final grade). There are four types of final grades:
-
+#### 5. [Student's Final Grade](https://www.codewars.com/kata/5ad0d8356165e63c140014d4)
 100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
 90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.

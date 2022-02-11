@@ -82,7 +82,7 @@
 
 ## WEDNESDAY TASKS
 
-#### 1. The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.
+#### 1. [Holiday VIII - Duty Free](https://www.codewars.com/kata/57e92e91b63b6cbac20001e5)
 
 ### Solution:
 	function dutyFree(normPrice, discount, hol){
@@ -91,11 +91,7 @@
 	  return Math.floor(hol/((normPrice*discount)/100));
 
 
-#### 2. Your function takes two arguments:
-current father's age (years)
-current age of his son (years)
-#### Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
-
+#### 2. [Twice as old](https://www.codewars.com/kata/5b853229cfde412a470000d0)
 ### Solution:
 	function twiceAsOld(dadYearsOld, sonYearsOld) {
 	  //This variable makes the operation of the number of dadYearsOld minus the multiply between the number
@@ -105,8 +101,7 @@ current age of his son (years)
 	  return Math.abs(twiceAsOld);
 	}
 
-#### 3. Your task is to write a function called valid_spacing() or validSpacing() which checks if a string has valid spacing. The function should return either True or False.
-For this kata, the definition of valid spacing is one space between words, and no leading or trailing spaces. Below are some examples of what the function should return.
+#### 3. [Valid Spacing](https://www.codewars.com/kata/5f77d62851f6bc0033616bd8)
 
 ### Solution:
 	function validSpacing(s) {
@@ -117,9 +112,7 @@ For this kata, the definition of valid spacing is one space between words, and n
 	  return s=='' ? true : s.split(' ').find(el=> el=='') >= 0 ? false : true
 	}
 
-#### 4. Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
-Note: input will never be an empty string
-
+#### 4. [Fake Binary](https://www.codewars.com/kata/57eae65a4321032ce000002d)
 ### Solution: Could not solve it by myself.
 	function fakeBin(x){
 	  return x.split('').map((num) => num > 4 ? 1 : 0).join('');

@@ -2,16 +2,7 @@
 
 ## Monday Tasks
 
-### 1. Who likes it?
-You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
-
-Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
-
-[]                                -->  "no one likes this"
-["Peter"]                         -->  "Peter likes this"
-["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
-["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
-["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+### 1. [Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)
 
 ### Solution:
     function likes(names) {
@@ -43,28 +34,12 @@ Implement the function which takes an array containing the names of people that 
      }
     }
 
-### 2. Bit Counting
-Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
-
-Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case.
+### 2. [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4)
 
 ### Solution: Pending.
 
 
-### 3. Decode the Morse code
-In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded by voice and digital data communication channels, it still has its use in some applications around the world.
-The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive, traditionally capital letters are used. When the message is written in Morse code, a single space is used to separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in Morse code is ···· · −·−−   ·−−− ··− −·· ·.
-
-NOTE: Extra spaces before or after the code have no meaning and should be ignored.
-
-In addition to letters, digits and some punctuation, there are some special service codes, the most notorious of those is the international distress signal SOS (that was first issued by Titanic), that is coded as ···−−−···. These special codes are treated as single special characters, and usually are transmitted as separate words.
-
-Your task is to implement a function that would take the morse code as input and return a decoded human-readable string.
-
-For example:
-
-decodeMorse('.... . -.--   .--- ..- -.. .')
-//should return "HEY JUDE"
+### 3. [Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e)
 
 ### Solution: Got Stuck!
 
@@ -88,7 +63,7 @@ decodeMorse('.... . -.--   .--- ..- -.. .')
 
 
 
-    morseCode = morseCode.trim();
+<!--     morseCode = morseCode.trim();
     let refinedData = morseCode.split('   ');
     let result = [];
   
@@ -105,15 +80,12 @@ decodeMorse('.... . -.--   .--- ..- -.. .')
     }
       }
      return result.join('');
-    }
+    } -->
 
 
 ## Tuesday Tasks
 
-### 1. Your order, please
-Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
-Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
-If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.
+### 1. [Your order, please](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
 
 ### Solution:
      function order(words){
@@ -125,17 +97,7 @@ If the input string is empty, return an empty string. The words in the input Str
       } return words;
     }
 
-### 2. Counting Duplicates
-Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
-
-Example
-"abcde" -> 0 # no characters repeats more than once
-"aabbcde" -> 2 # 'a' and 'b'
-"aabBcde" -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`)
-"indivisibility" -> 1 # 'i' occurs six times
-"Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice
-"aA11" -> 2 # 'a' and '1'
-"ABBA" -> 2 # 'A' and 'B' each occur twice
+### 2. [Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)
 
 ### Solution:
     function duplicateCount(text){
@@ -145,8 +107,7 @@ Example
       return count;
     }
 
-### 3. Simple Pig Latin
-Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+### 3. [Simple Pig Latin](https://www.codewars.com/kata/520b9d2ad5c005041100000f)
 
 ### Solution:
     function pigIt(str){  
@@ -162,8 +123,7 @@ Move the first letter of each word to the end of it, then add "ay" to the end of
 
 ## Wednesday Tasks
 
-### 1. Valid Parentheses
-Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+### 1. [Valid Parentheses](https://www.codewars.com/kata/52774a314c2333f0a7000688)
 
 ### Solution:
     function validParentheses(parens) {
@@ -177,8 +137,7 @@ Write a function that takes a string of parentheses, and determines if the order
     }
 
 
-### 2. Convert string to camel case
-Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+### 2. [Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003)
 
 ### Solution:
     function toCamelCase(str){
@@ -187,33 +146,14 @@ Complete the method/function so that it converts dash/underscore delimited words
       } return spacing;
     }
 
-### 3. Unique In Order
-Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
+### 3. [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667)
 
 ### Solution:
     let uniqueInOrder = (iterable) => {return [...iterable].filter((a, i) => a !== iterable[i-1])};
 
 ## Thursday Tasks
 
-### 1. Fold an array
-In this kata you have to write a method that folds a given array of integers by the middle x-times.
-
-An example says more than thousand words:
-
-Fold 1-times:
-[1,2,3,4,5] -> [6,6,3]
-
-A little visualization (NOT for the algorithm but for the idea of folding):
-
- Step 1         Step 2        Step 3       Step 4       Step5
-                     5/           5|         5\          
-                    4/            4|          4\      
-1 2 3 4 5      1 2 3/         1 2 3|       1 2 3\       6 6 3
-----*----      ----*          ----*        ----*        ----*
-
-
-Fold 2-times:
-[1,2,3,4,5] -> [9,6]
+### 1. [Fold an array](https://www.codewars.com/kata/57ea70aa5500adfe8a000110)
 
 ### Solution:
     function foldArray(array, runs){
@@ -222,42 +162,12 @@ Fold 2-times:
       }, 0);
     }
 
-### 2. Encrypt this!
-Encrypt this!
-
-You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:
-
-Your message is a string containing space separated words.
-You need to encrypt each word in the message using the following rules:
-The first letter must be converted to its ASCII code.
-The second letter must be switched with the last letter
-Keepin' it simple: There are no special characters in the input.
-Examples:
-encryptThis("Hello") === "72olle"
-encryptThis("good") === "103doo"
-encryptThis("hello world") === "104olle 119drlo"
+### 2. [Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449)
 
 ### Solution:
 Pending
 
-### 3. Format a string of names like 'Bart, Lisa & Maggie'.
-Given: an array containing hashes of names
-
-Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
-
-Example:
-
-list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
-// returns 'Bart, Lisa & Maggie'
-
-list([ {name: 'Bart'}, {name: 'Lisa'} ])
-// returns 'Bart & Lisa'
-
-list([ {name: 'Bart'} ])
-// returns 'Bart'
-
-list([])
-// returns ''
+### 3. [Format a string of names like 'Bart, Lisa & Maggie'. (retired)](https://www.codewars.com/kata/53368a47e38700bd8300030d)
 
 ### Solution:
     function list(names){

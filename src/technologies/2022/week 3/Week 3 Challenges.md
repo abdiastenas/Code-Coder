@@ -5,6 +5,9 @@
 ### 1. [Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)
 
 ### Solution:
+
+```javascript
+
     function likes(names) {
     /* This first conditional is using .LENGTH to count the exact number of characters,
     and the == is checking if the number of the count is equal to cero, meaning
@@ -33,6 +36,8 @@
      return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
      }
     }
+    
+```
 
 ### 2. [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4)
 
@@ -42,6 +47,7 @@
 ### 3. [Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e)
 
 ### Solution: Got Stuck!
+```javascript
 
     decodeMorse = function(morseCode){
       let message = '';
@@ -59,8 +65,6 @@
     }
     return message.join('');
     }
-
-
 
 
 <!--     morseCode = morseCode.trim();
@@ -81,13 +85,14 @@
       }
      return result.join('');
     } -->
-
+```
 
 ## Tuesday Tasks
 
 ### 1. [Your order, please](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
 
 ### Solution:
+```javascript
      function order(words){
       for(let i = 0; i < words.length; i++){
         if (words[i] == i){
@@ -96,20 +101,22 @@
         }
       } return words;
     }
-
+```
 ### 2. [Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)
 
 ### Solution:
+```javascript
     function duplicateCount(text){
       let count = {};
       let newArray = ['a', 'a', 'b', 'c'];
         newArray.forEach(function (Arr) { count[Arr] = (count[Arr] || 0) + 1; });
       return count;
     }
-
+```
 ### 3. [Simple Pig Latin](https://www.codewars.com/kata/520b9d2ad5c005041100000f)
 
 ### Solution:
+```javascript
     function pigIt(str){  
       let arr = str.split(' ')
       return arr
@@ -120,12 +127,13 @@
         })
         .join(' ')
     }
-
+```
 ## Wednesday Tasks
 
 ### 1. [Valid Parentheses](https://www.codewars.com/kata/52774a314c2333f0a7000688)
 
 ### Solution:
+```javascript
     function validParentheses(parens) {
       let count = 0;
       for ( let i = 0; i < parens.length; i++) {
@@ -135,33 +143,36 @@
       }
       return count == 0;
     }
-
+```
 
 ### 2. [Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003)
 
 ### Solution:
+```javascript
     function toCamelCase(str){
       let spacing = str.split('-').join('').split('_').join('');
       for (let i = 0; i < str.length; i++) {
       } return spacing;
     }
-
+```
 ### 3. [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667)
 
 ### Solution:
+```javascript
     let uniqueInOrder = (iterable) => {return [...iterable].filter((a, i) => a !== iterable[i-1])};
-
+```
 ## Thursday Tasks
 
 ### 1. [Fold an array](https://www.codewars.com/kata/57ea70aa5500adfe8a000110)
 
 ### Solution:
+```javascript
     function foldArray(array, runs){
       array.reduce(function(accumulator, currentValue) {
         return accumulator + currentValue;
       }, 0);
     }
-
+```
 ### 2. [Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449)
 
 ### Solution:
@@ -170,8 +181,10 @@ Pending
 ### 3. [Format a string of names like 'Bart, Lisa & Maggie'. (retired)](https://www.codewars.com/kata/53368a47e38700bd8300030d)
 
 ### Solution:
+```javascript
     function list(names){
       const coma = ',';
       const sign = '&';
       return names.reduce((pre, curr, index)) => `${pre}${(index == names.lentgh-1 ? sign : comma)}${curr.name}`, '').slide(2).trim();
     }
+```

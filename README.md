@@ -9,3 +9,6 @@ but I am excited to be a part of the Core Code challenge!
 * [Week 3 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%203/Week%203%20Challenges.md)
 * [Week 4 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%204/Week%204%20Challenges.md)
 * [Week 5 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%205/Week%205%20Challenges.md)
+* [Week 6 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%206/Week%206%20Challenges.md)
+* [Week 7 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%207/Week%207%20Challenges.md)
+* [Week 8 Challenges](https://github.com/airt10/Code-Coder/blob/main/src/technologies/2022/week%208/Week%208%20Challenges.md)

@@ -17,3 +17,5 @@
 ## [**Numbers in Colors**](https://github.com/airt10/Code-Coder/tree/main/src/technologies/2022/week%208/Numbers)
 
 ## [**Ordered and Unordered Lists**](https://github.com/airt10/Code-Coder/tree/main/src/technologies/2022/week%208/List%20Webpage)
+
+## [**Lorem Ipsum Random Generated Text](https://github.com/airt10/Code-Coder/tree/main/src/technologies/2022/week%208/Lorem)

@@ -220,7 +220,7 @@ function persistence(num) {
 	I am Abdias, a filmmaker and motion designer with over a decade of adventures with brands like Casa de Dios and McDonald's.
 	
 	I have started my journey this 2022 in the coding development field with the goal to learn,
-	grow and become a software developer by the end of the year.
+	grow and become a story teller and software developer by the end of the year.
 	
 	
 	My mission is to create better solutions for the economy and the housing issue in latin america.

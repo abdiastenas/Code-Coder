@@ -223,6 +223,8 @@ function persistence(num) {
 	grow and become a story teller and software developer by the end of the year.
 	
 	
-	My mission is to create better solutions for the economy and the housing issue in latin america.
+	My mission is to create better solutions for the economy and the housing issue in latin america
+	with technology and tell the story for next generations.
+	
 	I’m curious, resiliant and always open to learn, knowing every mistake is an opportunity to learn and grow, hoping to be able to contribute
 	to the data technologies that drives our modern world.

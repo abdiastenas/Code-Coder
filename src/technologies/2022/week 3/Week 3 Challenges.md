@@ -41,9 +41,17 @@
 
 ### 2. [Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4)
 
-### Solution: Pending.
-
-
+### Solution:
+``` Javascript
+var countBits = function(n) {
+  // make an array with the bit result
+  const base = (n).toString(2).split('');
+  // make a sum with the array and make the index a Number
+  const result = base.reduce((sum, num) => sum + Number(num), 0);
+   
+   return result;
+};
+```
 ### 3. [Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e)
 
 ### Solution: Got Stuck!

@@ -217,11 +217,12 @@ function persistence(num) {
 # FIRST CODE CORE CHALLENGE 🚲
 ## Mission Statement
 
-	I am Abdias, a motion designer. I have created videos for brands in animation and film.
+	I am Abdias, a filmmaker and motion designer with over a decade of adventures with brands like Casa de Dios and McDonald's.
 	
 	I have started my journey this 2022 in the coding development field with the goal to learn,
 	grow and become a software developer by the end of the year.
 	
-	I’m curious, perseverant and always open to learn, hoping to be able to contribute
-	to the data technologies that drives our modern world, with the objective to create
-	better solutions for the world’s economy and the housing issue.
+	
+	My mission is to create better solutions for the economy and the housing issue in latin america.
+	I’m curious, resiliant and always open to learn, knowing every mistake is an opportunity to learn and grow, hoping to be able to contribute
+	to the data technologies that drives our modern world.

@@ -57,42 +57,16 @@ var countBits = function(n) {
 ### Solution: Got Stuck!
 ```javascript
 
-    decodeMorse = function(morseCode){
-      let message = '';
-      let words = morseCode.trim().Split('   ');
-    for (let i = 0; i < words.length; i++){
-      let temp = words[i].split('');
-    for (let i = 0; i = temp.length; i++){
-     if (MORSE_CODE[temp[i]]){
-       message.push(MORSE_CODE[temp[i]]);
-      }
-     }
-     if (i !== words.length -1){
-     message.push(' ');
-     }
-    }
-    return message.join('');
-    }
-
-
-<!--     morseCode = morseCode.trim();
-    let refinedData = morseCode.split('   ');
-    let result = [];
-  
-    for (let i = 0; i < refinedData.length; i++) {
-    let temp = refinedData[i].split(' ');
-    for (let j = 0; j < temp.length; j++) {
-      if (MORSE_CODE[temp[j]]) {
-        result.push(MORSE_CODE[temp[j]]);
-      }
-    }
-    
-    if (i !== refinedData.length - 1) {
-    result.push(' ');
-    }
-      }
-     return result.join('');
-    } -->
+    ddecodeMorse = function(morseCode){
+ return morseCode
+             .split("   ")
+             .map(word => word
+             .split(" ")
+             .map(character => MORSE_CODE[character])
+             .join(''))
+             .join(' ')
+             .trim()
+}
 ```
 
 ## Tuesday Tasks
@@ -184,7 +158,27 @@ var countBits = function(n) {
 ### 2. [Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449)
 
 ### Solution:
-Pending
+``` Javascript
+var encryptThis = function(text) {
+  let strArr = text.split(' ');
+  let output = [];
+  
+  strArr.forEach(str => {
+    if (str.length === 1) {
+      output.push(str.charCodeAt(0));
+    } 
+    else {
+      let tempStr = str.split('');
+      tempStr[0] = str.charCodeAt(0);
+      tempStr[1] = str[str.length - 1];
+      tempStr[str.length - 1] = str[1];
+      output.push(tempStr.join(''));
+    }
+  });
+  
+  return output.join(' ');
+}
+```
 
 ### 3. [Format a string of names like 'Bart, Lisa & Maggie'. (retired)](https://www.codewars.com/kata/53368a47e38700bd8300030d)
 

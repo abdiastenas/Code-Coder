@@ -163,35 +163,47 @@
 #### 2. [Vowel remover](https://www.codewars.com/kata/5547929140907378f9000039)
 
 ### Solution:
-	function shortcut (string) {
-	  //The replace string method replaces every character inside the array with an empty string.
-	  //The regex was new for me so that had to be copied and pasted in a blink of an 'i'.
-	  return string.replace(/[aeiou]/ig,'');
-	}
-
+```
+function shortcut (string) {
+  //The replace string method replaces every character inside the array with an empty string.
+  //The regex was new for me so that had to be copied and pasted in a blink of an 'i'.
+  return string.replace(/[aeiou]/ig,'');
+}
+```
 #### 3. [Rock Paper Scissors!](https://www.codewars.com/kata/5672a98bdbdd995fad00000f)
 
 ### Solution:
-	//I was not able to solve this on my own due to time constrict issues.
-	const rps = (p1, p2) => {
-	  const pattern = ['rock', 'paper', 'scissors'];
-	  const p1Index = pattern.findIndex((v) => v === p1);
-	  const p2Index = pattern.findIndex((v) => v === p2);
-
-	  if ((p1Index + 1) % 3 === p2Index) {
-		return 'Player 2 won!';
-	  }
-	  if ((p1Index + 2) % 3 === p2Index) {
-		return 'Player 1 won!';
-	  }
-
-	  return 'Draw!';
-	};
-
+```const rps = (p1, p2) => {
+  const pattern = ['rock', 'paper', 'scissors'];
+  const p1Index = pattern.findIndex((element) => element === p1);
+  const p2Index = pattern.findIndex((element) => element === p2);
+  
+  if ((p1Index + 1) % 3 === p2Index) {
+    return 'Player 2 won!';
+  }
+  if ((p1Index + 2) % 3 === p2Index) {
+    return 'Player 1 won!';
+  }
+  
+  return 'Draw!';
+};
+```
 #### 4. [Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec)
 
 ### Solution:
-//Pending.
+```
+function persistence(num) {
+   if (num.toString().length === 1){
+     return 0;
+   }
+  let mult = 1;
+  let str = num.toString().split('');
+  for (let i = 0; i < str.length; i++) {
+    mult *= parseFloat(str[i])
+  }
+  return 1 + persistence(parseFloat(mult));
+}
+```
 
 # FIRST CODE CORE CHALLENGE 🚲
 ## Mission Statement

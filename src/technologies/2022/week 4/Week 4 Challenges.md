@@ -148,3 +148,84 @@ function spinWords(sentence){
 return result;
 }
 ```
+
+## Wednesday
+
+1. [Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009/solutions/javascript)
+### Solution:
+```Typescript
+function arrayDiff(a, b) {
+    return a.filter(val => !b.includes(val));
+}
+```
+2. [Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+### Solution:
+```Typescript
+function createPhoneNumber(numbers){
+  numbers.unshift("(");
+  numbers.splice(4, 0, ")", " ");
+  numbers.splice(9, 0, "-");
+  return numbers.join("");
+}
+```
+
+## Thursday
+
+1.[Detect Pangram](https://www.codewars.com/kata/545cedaa9943f7fe7b000048)
+### Solution:
+```Typescript
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const str = string.toLowerCase();
+  
+  for (let i = 0; i < alphabet.length-1; i += 1) {
+    if (str.indexOf(alphabet[i]) === -1) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+```
+
+2.[Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2)
+```Typescript
+const findMissingLetter = (array) => {
+  for (let i = 1; i < array.length; i++) {
+    const prev = array[i - 1].charCodeAt();
+    const current = array[i].charCodeAt();
+    
+    if (current - prev !== 1) {
+      return String.fromCharCode(prev + 1);
+    }
+  }
+  
+  return null;
+}
+```
+3.[Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235)
+```Typescript
+function findUniq(arr) {
+  let repeated = arr.filter((item, index) => arr.indexOf(item) !== index)
+  return arr.filter((item)=> item !== repeated[0])[0]
+}
+```
+4.[Reverse or rotate?](https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991)
+```Typescript
+ln = str.length;
+   if(sz < 1 || !str || sz > ln) return "";
+
+   const test = s => Array.prototype.reduce.call(s, (acc, val) => acc + Number(val) ** 3, 0) % 2 === 0;
+   const reverse = s => s.split("").reverse().join("");
+   const rotate = s => s.slice(1) + s.slice(0, 1);
+
+   let arr = [];
+   for(let i = 0; i < ln; i += sz) arr.push(i+sz <= ln ? str.slice(i, i+sz) : "")
+   return arr.map(x => test(x) ? reverse(x) : rotate(x)).join("");
+}
+```
+5.[What's Your Poison?](https://www.codewars.com/kata/58c47a95e4eb57a5b9000094)
+```Typescript
+function find(rats) {
+    return rats.reduce((a,b)=>a+Math.pow(2,b),0)
+}
+```

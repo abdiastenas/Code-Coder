@@ -227,3 +227,94 @@ export function longestConsec(strarr: string[], k: number): string {
     return longStr;
 }
 ```
+
+## Thursday
+
+1. [Tile](https://github.com/corecodeio/bootcamp-from-scratch/blob/main/src/technologies/2022/week5/Exercices/E0/desc/ED0W5.md)
+### Solution:
+```Typescript
+export class Tile {
+  letter: string;
+  value: number;
+
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile() {
+    console.log(`
+        ===========================
+          Letter: ${this.letter}
+          Value: ${this.value}
+        ===========================
+    `);
+  }
+}
+```
+2. [Time](https://github.com/corecodeio/bootcamp-from-scratch/blob/main/src/technologies/2022/week5/Exercices/E1/desc/ED1W5.md)
+### Solution:
+```Typescript
+export class Time {
+  hour: number;
+  minute: number;
+  second: number;
+
+  constructor(hour: number, minute: number, second: number) {
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  printTime() {
+    console.log(`
+        ===========================
+          Hours: ${this.hour}
+          Minutes: ${this.minute}
+          Seconds: ${this.second}
+        ===========================
+    `);
+  }
+
+  getInSeconds(): number {
+    const minutes = this.hour * 60 + this.minute;
+    return minutes * 60 + this.second;
+  }
+}
+```
+3. [Rational](https://github.com/corecodeio/bootcamp-from-scratch/blob/main/src/technologies/2022/week5/Exercices/E2/desc/ED2W5.md)
+### Solution:
+```Typescript
+export class Rational {
+  numerator: number;
+  denominator: number;
+
+  constructor(numerator: number, denominator: number) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational() {
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+
+  invert() {
+    [this.numerator, this.denominator] = [this.denominator, this.numerator];
+  }
+
+  toFloat(): number {
+    return this.numerator / this.denominator;
+  }
+
+  gcd(n: number, d: number): number {
+    if (d == 0) return n;
+    return this.gcd(d, n % d);
+  }
+
+  reduce() {
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
+  }
+}
+```

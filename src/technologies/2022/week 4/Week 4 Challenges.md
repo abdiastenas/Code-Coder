@@ -74,6 +74,7 @@ export function logPerson(user: Person) {
 persons.forEach(logPerson);
 ```
 5. [Typescript in operator](https://typescript-exercises.github.io/#exercise=3)
+### Solution:
 ```Typescript
 interface User {
     name: string;
@@ -125,6 +126,7 @@ export function logPerson(person: Person) {
 persons.forEach(logPerson);
 ```
 6. [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836)
+### Solution:
 ```Typescript
 export const findOdd = (xs: number[]): number => {
   //Using the reduce() method to return the number
@@ -133,6 +135,7 @@ export const findOdd = (xs: number[]): number => {
 };
 ```
 7. [Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001)
+### Solution:
 ```Typescript
 function spinWords(sentence){
   const sentenceArray = sentence.split(' ');
@@ -188,6 +191,7 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 ```
 
 2.[Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2)
+### Solution:
 ```Typescript
 const findMissingLetter = (array) => {
   for (let i = 1; i < array.length; i++) {
@@ -203,6 +207,7 @@ const findMissingLetter = (array) => {
 }
 ```
 3.[Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235)
+### Solution:
 ```Typescript
 function findUniq(arr) {
   let repeated = arr.filter((item, index) => arr.indexOf(item) !== index)
@@ -210,6 +215,7 @@ function findUniq(arr) {
 }
 ```
 4.[Reverse or rotate?](https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991)
+### Solution:
 ```Typescript
 ln = str.length;
    if(sz < 1 || !str || sz > ln) return "";
@@ -224,6 +230,7 @@ ln = str.length;
 }
 ```
 5.[What's Your Poison?](https://www.codewars.com/kata/58c47a95e4eb57a5b9000094)
+### Solution:
 ```Typescript
 function find(rats) {
     return rats.reduce((a,b)=>a+Math.pow(2,b),0)

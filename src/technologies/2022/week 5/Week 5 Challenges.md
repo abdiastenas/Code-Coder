@@ -120,6 +120,7 @@ export class G964 {
 }
 ```
 3. [Valid Braces](https://www.codewars.com/kata/5277c8a221e209d3f6000b56)
+### Solution:
 ```Typescript
 export function validBraces(braces: string): boolean {
    let tracer = []
@@ -141,16 +142,17 @@ export function validBraces(braces: string): boolean {
 }
 ```
 4. [Tic-Tac-Toe](https://www.codewars.com/kata/5216a87cbf53a9c30f0000dc)
+### Solution:
 ```Typescript
 Pending...
 ```
 5. [Tic-Tac-Toe-like table Generator](https://www.codewars.com/kata/5b817c2a0ce070ace8002be0)
+### Solution:
 ```Typescript
 Pending...
 ```
 ## Wednesday
 1. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/typescript)
-
 ### Solution:
 ```Typescript
 export function duplicateEncode(word: string){
@@ -165,7 +167,6 @@ export function duplicateEncode(word: string){
 ```
 
 2. [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/typescript)
-
 ### Solution:
 ```Typescript
 export const findOdd = (xs: number[]): number => {
@@ -176,7 +177,6 @@ return xs.reduce( (a,b) => a ^ b);
 ```
 
 3. [Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/typescript)
-
 ### Solution:
 ```Typescript
 export class G964 {
@@ -192,5 +192,38 @@ export class G964 {
       }
     }
   }
+}
+```
+
+4. [Sums of Parts](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/typescript)
+### Solution:
+```Typescript
+export function partsSums(ls: number[]): number[] {
+let result = [0]
+  for(const n in ls.reverse()){
+    result.push(ls[n]+result[n]);
+  }
+  return result.reverse()
+}
+```
+
+5. [Consecutive strings](https://www.codewars.com/kata/56a5d994ac971f1ac500003e)
+### Solution:
+```Typescript
+export function longestConsec(strarr: string[], k: number): string {
+   if (strarr.length == 0 || k > strarr.length || k <= 0) return '';
+    
+    let longStr = '';
+    
+    let newStr = '';
+    
+    for (let i = 0; i < strarr.length; i++){
+      newStr = strarr.slice(i, i+k);
+      if (newStr.join('').length > longStr.length){
+        longStr = newStr.join('');
+      }
+    }
+    
+    return longStr;
 }
 ```

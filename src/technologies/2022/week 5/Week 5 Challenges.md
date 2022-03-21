@@ -57,7 +57,97 @@ export function warnTheSheep(queue: string[]): string {
     }
 }
 ```
+## Tuesday
 
+1. [A Rule of Divisibility by 13](https://www.codewars.com/kata/564057bc348c7200bd0000ff)
+```Typescript
+export function thirt(n: number): number {
+  let static = n 
+  let arrayremainders = [1, 10, 9, 12, 3, 4]
+  
+  function arrayTimes(array)
+  {
+    let array = n.split('')
+    return (array)
+    let arrayReverse=array.reverse()
+    return (arrayReverse)
+    let arrayTimes = []
+    for(let x = 0; x < n.length; x++){
+      
+      let sequence;
+
+      if(sequence[x] % 6 === 0){
+      sequence = 0
+      } else {
+       sequence = sequence[x] % 6
+      }
+      arrayReverse + x + arrayremainders
+      return arrayTimes.push(arrayReverse[x] * arrayremainders[sequence])
+    }
+
+    console.log(arrayTimes)
+
+    function addsum (total,num)
+    {
+      return total+num
+    }
+      static = arrayTimes.reduce(addsum,0)
+      console.log(static)
+  }
+  arrayTimes(n)
+}
+```
+2. [Playing with digits ](https://www.codewars.com/kata/5552101f47fc5178b1000050/train/typescript)
+```Typescript
+export class G964 {
+
+    public static digPow = (n: number, p: number) => {
+        let string = n.toString();
+  let len = string.length;
+  let result = 0;
+  for(var i = 0; i < len ; i++) {
+    var numberser = parseInt(string.charAt(i),10);
+    result +=  Math.pow(numberser, p + i)
+  }
+  var x = Math.pow(n,p);
+  if(result === x){
+    return p;
+    } else if(result%n === 0) {
+    return result / n;
+  }else {
+    return -1  
+  }
+}
+```
+3. [Valid Braces](https://www.codewars.com/kata/5277c8a221e209d3f6000b56)
+```Typescript
+export function validBraces(braces: string): boolean {
+   let tracer = []
+  for(let i=0;i < braces.length; i++){
+    if ( braces[i] === "(" || braces[i] === "{" || braces[i] === "["){
+      tracer.push(braces[i])
+    } else{
+      if(tracer.length === 0) return false
+      let lastValue = tracer[tracer.length-1]
+      if( (braces[i] === ']' && lastValue === '[') || (braces[i] === '}' && lastValue === '{') || (braces[i] === ')' && lastValue === '('))
+      {
+        tracer.pop()
+      } else {
+        break;
+      }
+    }
+  }
+  return tracer.length === 0
+}
+```
+4. [Tic-Tac-Toe](https://www.codewars.com/kata/5216a87cbf53a9c30f0000dc)
+```Typescript
+Pending...
+```
+5. [Tic-Tac-Toe-like table Generator](https://www.codewars.com/kata/5b817c2a0ce070ace8002be0)
+```Typescript
+Pending...
+```
 ## Wednesday
 1. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/typescript)
 

@@ -153,7 +153,28 @@ function solveTTT(b) {
 5. [Tic-Tac-Toe-like table Generator](https://www.codewars.com/kata/5b817c2a0ce070ace8002be0)
 ### Solution:
 ```Typescript
-Pending...
+function displayBoard(board, width){
+  var arr=[];
+  var k=0
+  for (var i=0; i<2*board.length/width-1; i++)
+  {
+    if (i%2==0)
+    {
+      var s=[];
+      while (s.length<width)
+        s.push(" "+board[k++]+" ");
+      arr.push(s.join("|"));
+    }
+    else
+    {
+      var s="---";
+      for (var r=1; r<width; ++r)
+        s+="----"
+      arr.push(s)
+    }
+  }
+  return arr.join("\n");
+}
 ```
 ## Wednesday
 1. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/typescript)

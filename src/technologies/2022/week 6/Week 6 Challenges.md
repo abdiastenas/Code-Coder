@@ -6,7 +6,7 @@
 
 ## 1. [Movies](https://github.com/abdiastenas/Code-Coder/tree/main/src/technologies/2022/week%206/movies) 🎞
 
-# **Tuesday Challenges** 🤯
+# **Wednesday Challenges** 🤯
 ## 1. [Building Tower](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/typescript)
 ## Solution:
 ```Typescript

@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(243, 243, 243);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, .01fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}

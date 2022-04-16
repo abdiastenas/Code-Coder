@@ -25,3 +25,7 @@
 ## [**Lorem Ipsum Random Generated Text**](https://github.com/airt10/Code-Coder/tree/main/src/technologies/2022/week%208/Lorem)
 
 #### The randomness.
+
+# Wednesday Tasks
+
+## [Search Engine Links](https://github.com/abdiastenas/Code-Coder/tree/main/src/technologies/2022/week%208/Search%20Engines)

@@ -1,6 +1,6 @@
 # Monday Challenges
 
-## 1. [Easter egg list in ReactJS] (https://www.codewars.com/kata/5a95947f4a6b342636000173)
+## 1. [Easter egg list in ReactJS](https://www.codewars.com/kata/5a95947f4a6b342636000173)
 ## Solution:
 ```javascript
 import React from 'react';

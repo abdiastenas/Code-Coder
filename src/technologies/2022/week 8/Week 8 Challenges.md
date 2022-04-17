@@ -29,3 +29,7 @@
 # Wednesday Tasks
 
 ## [Search Engine Links](https://github.com/abdiastenas/Code-Coder/tree/main/src/technologies/2022/week%208/Search%20Engines)
+
+# Thursday Tasks
+
+## [Change Color]()
